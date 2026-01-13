@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Study Schedule</h1>
+    </header>
+    
+    <main>
+        <section id="routine">
+            <h2>Routine Checker</h2>
+            <ul id="routine-list"></ul>
+            <input type="text" id="new-routine" placeholder="Add activity (e.g., 9-10 AM: Math)">
+            <button onclick="addRoutine()">Add Routine</button>
+        </section>
+        
+        <section id="timer">
+            <h2>Study Timer</h2>
+            <div id="timer-display">00:00:00</div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <select id="activity-type">
+                <option value="study">Study</option>
+                <option value="coding">Coding</option>
+            </select>
+        </section>
+        
+        <section id="tracker">
+            <h2>Hours Tracker</h2>
+            <p>Total Study Hours Today: <span id="study-hours">0</span></p>
+            <p>Total Coding Hours Today: <span id="coding-hours">0</span></p>
+            <button onclick="resetHours()">Reset Daily Hours</button>
+        </section>
+        
+        <section id="revision">
+            <h2>Revision Scheduler</h2>
+            <ul id="revision-list"></ul>
+            <input type="text" id="new-topic" placeholder="Topic to revise">
+            <button onclick="addRevision()">Schedule Revision</button>
+        </section>
+    </main>
+    
+    
+</body>
+     <script src="script.js"></script>
+</html>
